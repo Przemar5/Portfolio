@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "test",
+  	"scss": "node-sass -watch sass/main.scss -o css/style.css"
+  },
+  "author": "Przemysław Krogulski",
+  "license": "ISC"
+}
