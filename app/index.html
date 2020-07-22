@@ -1,25 +1,28 @@
 <?php
-	phpinfo();die;
+	// phpinfo();die;
 
-	if (isset($_POST)) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$receiver = 'primero.el.dev@gmail.com';
-		$headers = [
-			'MIME-Version' => '1.0',
-			'From' => $email,
-			'Reply-To' => $email,
-			'Content-type' => 'text/html'
-		];
+	// if (isset($_POST)) {
+	// 	$name = $_POST['name'];
+	// 	$email = $_POST['email'];
+	// 	$message = $_POST['message'];
+	// 	$receiver = 'primero.el.dev@gmail.com';
+	// 	$headers = [
+	// 		'MIME-Version' 	=> 	'1.0',
+	// 		'From' 			=> 	$email,
+	// 		'Reply-To' 		=> 	$email,
+	// 		'Content-type' 	=> 	'text/html'
+	// 	];
 
-		if (mail($receiver, 'Email from website by' . $name, $message, $headers)) {
-			die('ok');
-		} else {
-			die('bad');
-		}
-	}
-	die;
+	// 	if (mail($receiver, 'Email from website by' . $name, $message, $headers)) {
+	// 		die('ok');
+
+	// 	} else {
+	// 		die('bad');
+	// 	}
+	// }
+	
+	// unset($_POST);
+	
 ?>
 
 <!DOCTYPE html>
@@ -93,6 +96,10 @@
 					<h2 class="section__header">
 						Hi, I'm Przemek Krogulski, full stack developer
 					</h2>
+
+					<button class="button--scroll-down">
+						
+					</button>
 				</div>
 			</div>
 
@@ -107,11 +114,11 @@
 				</h2>
 
 				<div class="about__container">
-					<div class="about__photo-container">
+					<!-- <div class="about__photo-container">
 						<div class="about__photo">
 							
 						</div>
-					</div>
+					</div> -->
 
 					<div class="about__card card">
 						<div class="card__part">
@@ -329,5 +336,6 @@
 		</footer>
 
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/sendMail.js"></script>
 	</body>
 </html>

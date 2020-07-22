@@ -340,6 +340,15 @@ textarea:focus {
   -webkit-text-fill-color: transparent;
 }
 
+.button--scroll-down {
+  background-color: black;
+  color: #fafafa;
+  border: none;
+  padding: 4rem 3.5rem;
+  box-shadow: 3px 3px 10px 0 rgba(40, 40, 40, 0.2);
+  cursor: pointer;
+}
+
 #home {
   width: 100%;
   height: 100vh;
@@ -358,6 +367,15 @@ textarea:focus {
 #home .canvas {
   height: 100vh;
   width: 100%;
+}
+#home .card {
+  position: relative;
+}
+#home .button--scroll-down {
+  position: absolute;
+  bottom: -5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #home .section__header {
   margin-bottom: 0;
@@ -623,7 +641,6 @@ textarea:focus {
 }
 
 #contact {
-  background-color: #f5f5f5;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
 }
 #contact > .section__header {
