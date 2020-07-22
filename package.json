@@ -10,7 +10,7 @@
   },
   "author": "Przemysław Krogulski",
   "license": "ISC",
-  "homepage": "http://przemekkrogulski.github.io/portfolio",
+  "homepage": "http://przemar5.github.io/portfolio",
   "dependencies": {
     "node-sass": "^4.14.1",
     "sass": "^1.26.10",
